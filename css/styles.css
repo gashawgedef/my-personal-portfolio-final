@@ -1,38 +1,132 @@
-
-
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
     width: 100%;
-    height: 150px;
+    height: 100vh;
+}
+.header{
     background-color: antiquewhite;
+    background: url('../img/bg8.jpg');
+    background-size: cover;
+    max-height: 750px;
+    opacity: 1;
+}
+.flex-header{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+}
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.nav-header{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
     position: relative;
 }
-.first{
-    background-color: blueviolet;
-    position: relative;
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.header .nav .list-items{
     display: flex;
+    flex-wrap: wrap;
+}
+.header .nav .list-items li{
+    padding: 1rem 2rem;
+}
+.header .nav .list-items a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header .nav .list-items a:hover{
+    color: #F4A460;
+    border-bottom: 2px solid #F4A460;
+}
+
+.header .nav .logo{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.nav{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+}
+
+.nav-header .left-column{
     width: 100%;
-    height: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
 }
-.second{
-background-color: aquamarine;
-width: 100%;
-height: 50%;
+
+.nav-header .btn{
+    margin: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: #F4A460;
+    color: #111;
+    font-size: 1.2rem;
 
 }
-.text{
-    color: white;
-    left: 0;
-   
+.nav-header .read-more{
+    width: 160px;
+    padding: 0.6rem;
+    text-align: center;
 }
-.icon{
-    color: white;
-    right: 0;
 
+.nav-header .call{
+    width: 250px;
+    padding: 0.6rem;
+    text-align: center;
+}
+.nav-header .title{
+    color: white;
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+.nav-header .description {
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin:  0 0 0 2rem;
+}
+
+
+.nav-header .right-column{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.nav-header .right-column img{
+    width: 90%;
+    height: 80%;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
 }
