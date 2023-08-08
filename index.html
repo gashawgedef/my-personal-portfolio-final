@@ -35,5 +35,17 @@
       </div>
     </header>
     <section class="section"></section>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+      $(window).scroll(function(){
+        if($(window).scrollTop()){
+          $('.nav').addClass('black');
+        }
+        else{
+          $('.nav').removeClass('black');
+        }
+      })
+
+    </script>
   </body>
 </html>

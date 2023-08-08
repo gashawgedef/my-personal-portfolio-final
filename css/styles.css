@@ -130,3 +130,6 @@ a{
     height: 100vh;
     background-color: bisque;
 }
+.nav.black .list-items{
+    background-color: #000;
+}
